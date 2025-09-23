@@ -1,9 +1,11 @@
 import express from "express"
-import { exercicio1, exercicio2 } from "./services/exercicios.js";
+import { exercicio1, exercicio1Post, exercicio2 } from "./services/exercicios.js";
 
 const app = express();
+app.use(express.json())
   //  http://localhost:3000/exercicio1/1/1
 app.get('/exercicio1', exercicio1)
+app.post('/exercicio1', exercicio1Post)
 
 
 //app.get('/api/pessoa/:id/teste:outroId', (req, res) => {
