@@ -4,7 +4,8 @@
   "description": "Projeto de exemplo JP",
   "main": "index.js",
   "type": "module",
-  "scripts": {
+  "scripts": { 
+  "dev" : "node --watch index.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Khalil Monteiro",
